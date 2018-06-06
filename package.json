@@ -1,0 +1,28 @@
+{
+  "name": "node_nuxt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nuxt",
+    "lint:js": "eslint --ext .vue --ignore-path .gitignore ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.1",
+    "@nuxtjs/dotenv": "^1.1.1",
+    "@types/node": "^10.0.8",
+    "axios": "^0.18.0",
+    "nuxt": "^1.4.0",
+    "nuxt-property-decorator": "^1.2.0",
+    "vuex-class": "^0.3.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "ts-loader": "^3.5.0",
+    "typescript": "^2.8.3",
+    "vue-style-loader": "^4.1.0"
+  }
+}
