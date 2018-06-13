@@ -2,11 +2,11 @@ import { MutationTree, ActionTree } from 'vuex';
 import { State } from '~/types'
 
 export const state = () : State => ({
-  counter: 23
-})
+  instruments_active_instrument: 'photo'
+});
 
 export const mutations: MutationTree<State> = {
-  increment(state: State) {
-    state.counter += 23;
+  set_instruments_active_instrument(state: State, instrument: string) {
+    state.instruments_active_instrument = instrument;
   }
-}
+};

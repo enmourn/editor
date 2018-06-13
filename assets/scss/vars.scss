@@ -1,0 +1,52 @@
+$color_grey: #e9e9e9;
+$color_dark_grey: #52575b;
+$color_orange: #f07b21;
+$color_green: #009d51;
+$color_blue: #0f55a0;
+
+@font-face {
+  font-family: 'ALSRubl-Arial';
+  src:
+    url('/static/fonts/alsrubl-arial-regular.woff2') format('woff2'),
+    url('/static/fonts/alsrubl-arial-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'core_sans_d_55_boldregular';
+  src:
+    url('/static/fonts/CoreSansD55Bold-webfont.woff2') format('woff2'),
+    url('/static/fonts/CoreSansD55Bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'core_sans_d_45_mediumregular';
+  src:
+    url('/static/fonts/CoreSansD45Medium-webfont.woff2') format('woff2'),
+    url('/static/fonts/CoreSansD45Medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'core_sans_d_35_regularregular';
+  src:
+    url('/static/fonts/coresansd35regular-webfont.woff2') format('woff2'),
+    url('/static/fonts/coresansd35regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gerberamedium';
+  src:
+    url('/static/fonts/Gerbera-Medium-webfont.woff2') format('woff2'),
+    url('/static/fonts/Gerbera-Medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$rub: ALSRubl-Arial;
+$c55: core_sans_d_55_boldregular;
+$c45: core_sans_d_45_mediumregular;
+$c35: core_sans_d_35_regularregular;
+$germ: gerberamedium;

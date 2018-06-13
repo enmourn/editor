@@ -23,6 +23,7 @@
     "sass-loader": "^7.0.1",
     "ts-loader": "^3.5.0",
     "typescript": "^2.8.3",
-    "vue-style-loader": "^4.1.0"
+    "vue-style-loader": "^4.1.0",
+    "webpack-spritesmith": "^0.4.1"
   }
 }

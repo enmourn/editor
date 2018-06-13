@@ -1,0 +1,72 @@
+@mixin instrument($sprite, $sprite_active, $position) {
+  .instrument {
+    position: absolute;
+    background: white;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    width: calc(100% - 66px - 2px);
+    height: 100%;
+    margin-left: 66px;
+    display: flex;
+    flex-direction: column;
+    &.active {
+      z-index: 100;
+      .tab {
+        border-left-color: $color_blue;
+        .icon {
+          @include sprite($sprite_active);
+        }
+      }
+    }
+    .tab {
+      position: absolute;
+      width: 66px;
+      height: 60px;
+      left: -67px;
+      top: 60px * $position;
+      border-left: 6px solid transparent;
+      padding-right: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      .icon {
+        display: block;
+        @include sprite($sprite);
+      }
+      &:hover .icon {
+        @include sprite($sprite_active);
+      }
+    }
+    .head {
+      padding: 20px 0 10px 15px;
+      border-bottom: 1px solid #d3d3d3;
+      .title {
+        display: block;
+        font-family: $c35;
+        font-size: 14px;
+        color: $color_blue;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        &:after {
+          content: '';
+          display: block;
+          width: 20px;
+          height: 2px;
+          background: $color_blue;
+          margin: 7px 0;
+        }
+      }
+    }
+    .library {
+      font-family: $c35;
+      font-size: 12px;
+      color: $color_blue;
+    }
+    .body {
+      width: 100%;
+      flex-grow: 1;
+      background: #f2f2ff;
+    }
+  }
+}

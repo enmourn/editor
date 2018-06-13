@@ -1,5 +1,5 @@
 export interface State {
-  counter: number
+  instruments_active_instrument: string
 }
 export interface City {
   id: number,

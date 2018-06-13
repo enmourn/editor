@@ -1,30 +1,34 @@
 <template>
 	<div id="app">
-		<TheHeading></TheHeading>
-		<TheInstruments></TheInstruments>
-		<TheWorkspace></TheWorkspace>
+		<EditorHeader></EditorHeader>
+		<EditorInstruments></EditorInstruments>
+		<EditorWorkspace></EditorWorkspace>
 	</div>
 </template>
 
 <script lang="ts">
   import { Component, Vue } from "nuxt-property-decorator"
-	import TheHeading from '~/components/TheHeading.vue'
-	import TheInstruments from '~/components/TheInstruments.vue'
-	import TheWorkspace from '~/components/TheWorkspace.vue'
+	import EditorHeader from '~/components/EditorHeader.vue'
+	import EditorInstruments from '~/components/EditorInstruments.vue'
+	import EditorWorkspace from '~/components/EditorWorkspace.vue'
 
   @Component({
     components: {
-      TheHeading,
-			TheInstruments,
-			TheWorkspace
+      EditorHeader,
+			EditorInstruments,
+			EditorWorkspace
     }
   })
   export default class App extends Vue {}
 </script>
 
 <style type="scss">
+  @import "../assets/scss/normalize.scss";
 	#app {
-		display: flex;
-		flex-direction: column;
+		display: grid;
+		grid-template-areas:
+			"header header"
+			"instruments workspace";
+		grid-auto-columns: min-content 1fr;
 	}
 </style>
