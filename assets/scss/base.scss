@@ -1,0 +1,24 @@
+@import 'normalize';
+@import 'sprite';
+@import 'vars';
+
+@mixin button($bg_color) {
+  font-family: $c45;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: white;
+  background: $bg_color;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  &:hover {
+    background: lighten($bg_color, 6%);
+  }
+}
+@mixin hr() {
+  width: 30px;
+  height: 3px;
+  border: none;
+  background: $color_orange;
+}
