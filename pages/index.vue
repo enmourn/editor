@@ -3,20 +3,26 @@
 		<EditorHeader></EditorHeader>
 		<EditorInstruments></EditorInstruments>
 		<EditorWorkspace></EditorWorkspace>
+		<EditorPopup></EditorPopup>
+		<EditorLoader v-if="$store.state.global_loader"></EditorLoader>
 	</div>
 </template>
 
 <script lang="ts">
-  import { Component, Vue } from "nuxt-property-decorator"
+  import { Component, Vue, Provide } from "nuxt-property-decorator"
 	import EditorHeader from '~/components/EditorHeader.vue'
 	import EditorInstruments from '~/components/EditorInstruments.vue'
 	import EditorWorkspace from '~/components/EditorWorkspace.vue'
+	import EditorPopup from '~/components/EditorPopup.vue'
+  import EditorLoader from "../components/EditorLoader";
 
   @Component({
     components: {
+      EditorLoader,
       EditorHeader,
 			EditorInstruments,
-			EditorWorkspace
+			EditorWorkspace,
+			EditorPopup
     }
   })
   export default class App extends Vue {}

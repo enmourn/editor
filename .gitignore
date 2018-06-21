@@ -1,4 +1,6 @@
-.nuxt
 .idea
+.nuxt
+assets/scss/sprite.scss
 node_modules
+static/img/sprite.png
 package-lock.json

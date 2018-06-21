@@ -13,7 +13,7 @@
 
 <script lang="ts">
   import { Component, Provide } from "nuxt-property-decorator"
-  import Instrument from './mixins/instrument'
+  import Instrument from '../mixins/instrument/instrument'
 
   @Component({})
   export default class InstrumentGrid extends Instrument {
@@ -22,8 +22,8 @@
 </script>
 
 <style lang="scss" scoped>
-  @import "../assets/scss/vars.scss";
-  @import "../assets/scss/sprite.scss";
-  @import "../assets/scss/instrument.scss";
+  @import "../../assets/scss/vars";
+  @import "../../assets/scss/sprite";
+  @import "../mixins/instrument/instrument";
   @include instrument($grid, $grid_active, 3);
 </style>

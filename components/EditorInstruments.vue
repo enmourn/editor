@@ -11,12 +11,12 @@
 
 <script lang="ts">
   import { Component, Vue } from "nuxt-property-decorator"
-  import InstrumentPhoto from '~/components/InstrumentPhoto.vue'
-  import InstrumentBackground from '~/components/InstrumentBackground.vue'
-  import InstrumentSticker from '~/components/InstrumentSticker.vue'
-  import InstrumentGrid from '~/components/InstrumentGrid.vue'
-  import InstrumentText from '~/components/InstrumentText.vue'
-  import InstrumentOption from '~/components/InstrumentOption.vue'
+  import InstrumentPhoto from '~/components/instruments/InstrumentPhoto.vue'
+  import InstrumentBackground from '~/components/instruments/InstrumentBackground.vue'
+  import InstrumentSticker from '~/components/instruments/InstrumentSticker.vue'
+  import InstrumentGrid from '~/components/instruments/InstrumentGrid.vue'
+  import InstrumentText from '~/components/instruments/InstrumentText.vue'
+  import InstrumentOption from '~/components/instruments/InstrumentOption.vue'
 
   @Component({
     components: {

@@ -64,9 +64,11 @@
       color: $color_blue;
     }
     .body {
+      position: relative;
       width: 100%;
       flex-grow: 1;
-      background: #f2f2ff;
+      display: flex;
+      flex-direction: column;
     }
   }
 }
