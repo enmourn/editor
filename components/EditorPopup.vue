@@ -29,7 +29,6 @@
       this.$store.commit('set_popups_active_popup', '');
     }
     @Provide() mounted() {
-      console.log('popup mounted');
       let self = this;
       document.addEventListener('keyup', function(e) {
         if (e.code === 'Escape') {

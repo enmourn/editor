@@ -41,16 +41,7 @@
       let request: string = 'https://papara.ru/create/api/photobooks/421d9279-6c2b-4d1f-a647-d1afb1d71c96/';
       let res_str: AxiosResponse = await this.$axios.get(request);
       let res = JSON.parse(res_str.request.response);
-      //console.log(res);
       let previews: Array<Preview> = [];
-
-      // res.pages.forEach(function(value, index: Number) {
-      //   previews.push({
-      //     src: 'http://papara.ru' + value.product_json.preview_img,
-      //     title: index === 0 ? 'Обложка' : 'Разворот'
-      //   });
-      // });
-
       let index = 0;
       for (let value of res.pages) {
         if (this.active_page_id === 0) {
