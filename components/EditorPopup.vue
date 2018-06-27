@@ -16,7 +16,7 @@
   import { Vue, Component, Provide} from "nuxt-property-decorator"
   import PopupCheck from "./popups/PopupCheck";
   import PopupSave from "./popups/PopupSave";
-  import PopupAddPhoto from "./popups/PopupAddPhoto";
+  import PopupAddPhoto from "./popups/PopupAddPhoto/PopupAddPhoto";
 
   @Component({
     components: { PopupSave, PopupCheck, PopupAddPhoto }

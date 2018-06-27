@@ -2,6 +2,7 @@ export interface State {
   instruments_active_instrument: string
   popups_active_popup: string
   photo_autocomplete: boolean
+  popup_add_photo_active_resource: string
 }
 export interface Preview {
   src: string,

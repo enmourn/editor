@@ -9,11 +9,11 @@
 </template>
 
 <script lang="ts">
-  import { Component, Vue, Provide } from "nuxt-property-decorator"
-	import EditorHeader from '~/components/EditorHeader.vue'
-	import EditorInstruments from '~/components/EditorInstruments.vue'
-	import EditorWorkspace from '~/components/EditorWorkspace.vue'
-	import EditorPopup from '~/components/EditorPopup.vue'
+  import { Component, Vue } from "nuxt-property-decorator"
+	import EditorHeader from '~/components/EditorHeader'
+	import EditorInstruments from '~/components/EditorInstruments'
+	import EditorWorkspace from '~/components/EditorWorkspace'
+	import EditorPopup from '~/components/EditorPopup'
   import EditorLoader from "../components/EditorLoader";
 
   @Component({
