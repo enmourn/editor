@@ -5,7 +5,7 @@ export const state = () : State => ({
   instruments_active_instrument: 'photo',
   popups_active_popup: '',
   photo_autocomplete: true,
-  popup_add_photo_active_resource: 'device'
+  popup_add_photo_active_panel: 'device'
 });
 
 export const mutations: MutationTree<State> = {
@@ -18,7 +18,7 @@ export const mutations: MutationTree<State> = {
   change_photo_autocomplete(state: State) {
     state.photo_autocomplete = !state.photo_autocomplete;
   },
-  set_popup_add_photo_active_resource(state: State, resource_name: string) {
-    state.popup_add_photo_active_resource = resource_name;
+  set_popup_add_photo_active_panel(state: State, panel_name: string) {
+    state.popup_add_photo_active_panel = panel_name;
   }
 };
