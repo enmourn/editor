@@ -1,15 +1,17 @@
 <template>
   <section class="panel device">
     <button class="navigation"
-            :class="{connected: connected, active: active}"
+            :class="{connected: resource_connected, active: panel_active}"
             @click="$store.commit('set_popup_add_photo_active_panel', 'device')">
       <span class="icon"></span>
       <span class="text">устройство</span>
     </button>
-    <section class="content" v-show="active">
-      <img src="../../../static/img/from_device.png"/>
-      <span>загружайте фотографии с вашего устройства</span>
-      <button type="button">нажмите, чтобы добавить фото</button>
+    <section class="content" v-show="panel_active">
+      <div class="static">
+        <img src="../../../static/img/from_device.png"/>
+        <span>загружайте фотографии с вашего устройства</span>
+        <button type="button">нажмите, чтобы добавить фото</button>
+      </div>
     </section>
   </section>
 </template>
@@ -18,8 +20,8 @@
   import {Vue, Component, Prop, Provide} from 'nuxt-property-decorator';
   @Component({})
   export default class DevicePanel extends Vue {
-    @Prop() connected?: boolean;
-    @Provide() get active() {
+    @Prop() resource_connected?: boolean;
+    @Provide() get panel_active() {
       return this.$store.state.popup_add_photo_active_panel === 'device';
     }
   }
